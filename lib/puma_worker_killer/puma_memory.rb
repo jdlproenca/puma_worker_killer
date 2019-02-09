@@ -76,7 +76,7 @@ module PumaWorkerKiller
         workers[worker] = GetProcessMem.new(worker.pid).mb
       end
       if workers.any?
-        @workers = Hash[ workers.sort_by {|_, mem| mem } ]
+        @workers = Hash[ workers.sort_by {|_, mem| mem }.reverse! ]
       else
         {}
       end

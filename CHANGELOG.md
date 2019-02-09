@@ -1,3 +1,7 @@
+## 0.1.99 
+
+- 2019-Feb-09: Made rolling restart affect only 1 worker, the one with most memory usage.
+
 ## 0.1.0
 
 - Emit extra data via `pre_term` callback before puma worker killer terminates a worker #49.
